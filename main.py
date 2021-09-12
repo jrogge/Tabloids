@@ -6,7 +6,8 @@ from Tabloid import merge_sort
 srtd_3 = merge_sort(t3.tabs, [])
 # merge sort results in increasing order, to display as hasse diagram reverse
 for tab in srtd_3[::-1]:
-    print(tab)
+    out_str = str(tab) + (" " * (24 - len(str(tab)))) + str(tab.shape)
+    print(out_str)
 
 print("================")
 print()
@@ -16,4 +17,5 @@ print("================")
 srtd_4 = merge_sort(t4.tabs, [])
 # merge sort results in increasing order, to display as hasse diagram reverse
 for tab in srtd_4[::-1]:
-    print(tab)
+    out_str = str(tab) + (" " * (24 - len(str(tab)))) + str(tab.shape)
+    print(out_str)
